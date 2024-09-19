@@ -7,7 +7,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    navigate('/');
+    window.location.href = "/"
   };
 
   if (!token) return null;
